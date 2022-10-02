@@ -1,0 +1,78 @@
+/*Removendo padroes*/
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    width: 100vw;
+    background: linear-gradient(72deg, #3debb0 1%, #8956f3 99%);
+}
+
+/*Estilizando*/
+.content {
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden; /*Esconde Conteudo que esta ultrapassando content*/
+    position: absolute; /*Posiciona Elemento onde quiser*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Primeiro Horizontal, Segundo Vertical ( Move elemento em seu eixo)*/
+}
+/*Alinhando Navigation*/
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+/*Personalizando Labels*/
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+/*Mudar Quando passar mouse*/
+.bar:hover{
+    background-color: #fff;
+}
+/*Desaparecer com Inputs*/
+input{
+    display: none;
+}
+/*Colocarndo Slides modo Flex e Tamanho <> em 500% poque são 5 Imagens*/
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+/*Colocando Imagens ocupando 20% dos 500% que seria 100% para cada, efeito de 6seg*/
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+/*Colocando todas imagens em 100% sem cortes*/
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+#slide4:checked ~ .s1{
+    margin-left: -60%;
+}
+#slide5:checked ~ .s1{
+    margin-left: -80%;
+}

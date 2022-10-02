@@ -1,0 +1,85 @@
+.main-banner {
+    display: flex;
+    height: 70vh;
+    background-position: center;
+    background-image: url('../img/CineAFPESPSect1200.jpg');
+    background-size: cover;
+    padding-top: 15vh;
+    justify-content: center;
+}
+
+.section-sobre{
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #28ac0b;
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    height: auto;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+.section-sobre h2{
+    margin: 0px;
+}
+
+.section-sobre p{
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 25px;
+}
+
+.section-sobre a {
+    color: red;
+    padding: 1%;
+    background-color:yellow;
+    border-radius: 10%;
+}
+
+@media(max-width: 412px){
+    
+    .main-banner {
+        background-position: center;
+        background-image: url('../img/CineAFPESPSect2.jpg');
+    }
+    
+    .section-sobre{
+        font-size: .9em;
+    }
+
+    .section-sobre a {
+        font-size: 1.2em;
+    }
+}
+
+@media(max-width: 385px){
+    
+    .main-banner {
+        background-position: center;
+        background-image: url('../img/CineAFPESPSect2.jpg');
+    }
+    
+    .section-sobre{
+        font-size: .9em;
+    }
+
+    .section-sobre a {
+        font-size: 1.2em;
+    }
+}
+
+@media(max-width: 360px){
+    .main-banner {
+        background-position: center;
+        background-image: url('../img/CineAFPESPSect2.jpg');
+    }
+    
+    .section-sobre{
+        font-size: .9em;
+    }
+    
+    .section-sobre a {
+        font-size: 1.2em;
+    }
+
+}

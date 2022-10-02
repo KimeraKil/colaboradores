@@ -1,0 +1,125 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #28ac0b;
+    color: #fff;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+a:hover{
+    background: rgba(0, 255, 0, 0.5);
+}
+
+#colaboradores{
+    display: flex;
+    width: 45px;
+    margin: 5px;
+}
+
+#header{
+    box-sizing: border-box;
+    display: flex;
+    height: 60px;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+}
+
+#titulo{
+    font-size: 30px;
+}
+
+#menu a{
+    display: block;
+    padding: .5rem;
+}
+
+#btn{
+    display: none;
+}
+
+@media (max-width:450px){
+    #titulo{
+        display: none;
+    }
+
+    /*#menu a{
+        font-size: 15px;
+    }*/
+
+    #menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 45px;
+        right: 0px;
+        background-color: #238b0b;        
+        transition: .6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+ 
+    }
+
+    #nav:active #menu{
+        height: calc(100vh - 45px); /*Não Cria Barra*/
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid #28ac0b;
+    }
+
+    #btn-moblile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap:.5rem;
+    }
+
+    #fxdesenho{
+        border-top: 2px solid white;
+        width: 20px;
+    }
+
+    #fxdesenho::after, #fxdesenho::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: white;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #fxdesenho{
+        border-bottom-color: transparent;
+    }
+    #nav.active #fxdesenho::before{
+        transform: rotate(135px);
+    }
+    #nav.active #fxdesenho::after{       
+        transform: rotate(-135px);
+        top: -7px;
+
+    }
+}
+

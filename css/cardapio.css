@@ -1,0 +1,216 @@
+/*   DEFINIÇÃO GERAL  */
+/*Definindo Fonte e Marge Body e H2*/
+body, h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #28ac0b;
+    align-items: center;
+    justify-content: center;
+}
+/*Definindo Tamanho do H2*/
+h2{
+    font-size: 30px;
+}
+/*Definindo Cor de Fundo, Cor da Fonte, Area Clicavel,
+e Tamanho Navbar*/
+#navbar{
+    display: flex;
+    float: inline-start;
+    background-color: #28ac0b;
+    color: rgb(255, 255, 255);
+    padding: 0 15px;
+    height: 60px;
+}
+/*Definindo comportamento/orientação dos itens*/
+#navbar h2, #navbar nav, #navbar ul, #navbar-list li{
+    display: inline-block;
+}
+/*Definindo posição do Item*/
+#navbar nav{
+    float: right;
+}
+/*Definindo Altura/tamanho da Imagem, trasformação em
+corte redondo em volta da imagem, posição, altura*/
+#navbar img{
+    height: 45px;
+    border-radius: 50%;
+    position: absolute ;
+    top: 10px;
+}
+/*Definindo Margem, altura da linha, e distancia da 
+margem esquerda*/
+#navbar h2{
+    margin: 0;
+    line-height: 60px;
+    margin-left: 55px;
+}
+/*Definindo margem da lista */
+#navbar ul{
+    margin-top: 22px;
+}
+/*Definindo margem da lista*/
+#navbar li{
+    margin: 0 10px;
+}
+/*Removendo underline dos links, mudando cor dos links*/
+#navbar-list li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#navbar-list li a:hover{
+    border-bottom: 1px solid #fff;
+}
+footer .detail{
+    font-weight: bold;
+}
+
+footer p{
+    margin-top: 10px;
+}
+
+footer{
+    position: sticky;
+    padding: 10px 0;
+    background-color: #28ac0b;
+    color: #fff;
+    text-align: center;
+}
+
+.container, .container2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    flex-wrap: wrap;
+    z-index: 1;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.container .card{
+    position: relative;
+    width: 350px;
+    height: 600px;
+    margin: 10px;
+    box-shadow: 20px 20px 50px rgb(0, 0, 0, .5);
+    border-radius: 15px;
+    background: rgb(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(255, 255, 255, 0.5);
+    border-left: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.container .card .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container .card:hover .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.container h2{
+    position: absolute;
+    top: -80px;
+    /*right: 30px;*/
+    font-size: 4em;
+    color: rgba(255, 255, 255, 0.65);
+    pointer-events: none;
+}
+
+.container .card h3{
+    position: absolute;
+    top: 0px;
+    font-size: 1.8em;
+    color: rgb(0, 0, 0, 0.9);
+    z-index: 1;
+}
+
+.container .card .content p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 400;
+}
+
+@media(max-width: 450px)
+{
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    }
+
+    p #navbar-list li a{
+        font-size: 0.5rem;
+    }    
+
+    #navbar h2 {
+        display: none;
+    }
+
+    #navbar img {
+        top: 5px;
+    }
+
+    #banner-info img{
+        width: 150px;
+        height: 150px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #navbar ul{
+        margin-top: 0.3rem;
+        text-align: center;
+    }
+
+    #main-banner {
+        height: 40vh;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        font-size: 12px;
+    }
+
+    #main-banner p{
+        background-color: #d2b65a;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        width: 50%;
+        padding: 1%;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        font-weight: normal;
+    }
+
+    .menu2{
+        border: none;
+    }
+
+    .menu1{
+        border: none;
+    }
+
+    .container img{
+        display: none;
+    }
+}

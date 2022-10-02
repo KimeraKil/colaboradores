@@ -1,0 +1,148 @@
+body{
+    animation: animado 15s ease infinite;
+    background: linear-gradient(-45deg, #f05120, #6af065, #23a6d5, #23d5ab) no-repeat;
+    background-size: 300% 300%;
+    height: 90vh;
+}
+
+@keyframes animado {
+    0%{
+    background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+/*Estilizando*/
+.content {
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden; /*Esconde Conteudo que esta ultrapassando content*/
+    position: relative; /*Posiciona Elemento onde quiser*/
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%, -5%); /*Primeiro Horizontal, Segundo Vertical ( Move elemento em seu eixo)*/
+}
+/*Alinhando Navigation*/
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 16%;
+    top: 50;
+    transform: translate(-50, -50%);
+    display: flex;
+}
+/*Personalizando Labels*/
+.bar {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #fff;
+    margin: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+    margin-bottom: 30px;
+}
+.bar img{
+    width: 45px;
+    height: 45px;
+}
+/*Mudar Quando passar mouse*/
+.bar:hover{
+    background-color: #fff;
+}
+/*Desaparecer com Inputs*/
+input{
+    display: none;
+}
+/*Colocarndo Slides modo Flex e Tamanho <> em 500% poque são 5 Imagens*/
+.slides{
+    position: absolute;
+    display: flex;
+    width: 1800%;
+    height: 100%;
+}
+/*Colocando Imagens ocupando 20% dos 500% que seria 100% para cada, efeito de 6seg*/
+.slide{
+    width: 6%;
+    transition: .6s;
+}
+/*Colocando todas imagens em 100% sem cortes*/
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+#slide2:checked ~ .s1{
+    margin-left: -6%;
+}
+#slide3:checked ~ .s1{
+    margin-left: -12%;
+}
+#slide4:checked ~ .s1{
+    margin-left: -18%;
+}
+#slide5:checked ~ .s1{
+    margin-left: -24%;
+}
+#slide6:checked ~ .s1{
+    margin-left: -30%;
+}
+#slide7:checked ~ .s1{
+    margin-left: -36%;
+}
+#slide8:checked ~ .s1{
+    margin-left: -42%;
+}
+#slide9:checked ~ .s1{
+    margin-left: -48%;
+}
+#slide10:checked ~ .s1{
+    margin-left: -54%;
+}
+#slide11:checked ~ .s1{
+    margin-left: -60%;
+}
+#slide12:checked ~ .s1{
+    margin-left: -66%;
+}
+#slide13:checked ~ .s1{
+    margin-left: -72%;
+}
+#slide14:checked ~ .s1{
+    margin-left: -78%;
+}
+#slide15:checked ~ .s1{
+    margin-left: -84%;
+}
+#slide16:checked ~ .s1{
+    margin-left: -90%;
+}
+#slide17:checked ~ .s1{
+    margin-left: -96%;
+}
+#slide18:checked ~ .s1{
+    margin-left: -102%;
+}
+
+@media(max-width: 385px){
+    .content{
+        width: 360px;
+        height: 360px;
+        top: 18px;
+    }
+
+}
+@media(max-width: 360px){
+
+}

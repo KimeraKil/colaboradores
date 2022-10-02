@@ -1,0 +1,169 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #28ac0b;
+    height: 55px;
+    width: 100%;
+} 
+
+.navbar-menu{
+    position: absolute;
+    display: block;
+    padding: 5px;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#menu{
+    display: none;
+}
+
+.navbar-menu{
+    display: none;
+}
+
+.logoColaboradores{
+    display: block;
+    margin: auto 5px;
+    width: 45px;
+    height: 45px;
+}
+
+.titulo{
+    display: block;
+    margin: 0 5px;
+    color: white;
+}
+
+.navbar-list{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+ul li{
+    display: inline-block;
+    margin: 0px 7px;
+    padding: 0px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover{
+    background-color: rgba(150, 218, 40, 0.795);
+    padding: 5px 0 5px 0;
+}
+
+.footerP{
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #28ac0b;
+    color: white;
+}
+
+footer .detail{
+    font-weight: bold;
+}
+
+@media(max-width: 680px)
+{
+    body{
+        height: 800px;
+    }    
+    .titulo{
+        font-size: 15px;
+    }
+
+    ul li{
+        display: block;
+        width: 680px;
+        height: auto;
+        text-align: center;
+        line-height: 40px;
+        /*margin: 5px 0px 20px 0;*/
+        padding: 0px;
+        font-size: 20px;
+        z-index: 1;
+    }
+
+    ul li{
+        display: none;
+    }
+
+    .navbar-menu{
+        display: block;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .navbar-list{
+        right: 0;
+        top: 35px;
+        background-color: #46ac0bd2;
+    }
+
+    #menu:checked ~ ul li{
+        display: block;
+    }
+
+
+}
+
+@media(max-width: 560px)
+{
+
+    body{
+        height: 800px;
+    }    
+    .titulo{
+        font-size: 15px;
+    }
+
+    ul li{
+        display: block;
+        width: 350px;
+        height: auto;
+        text-align: center;
+        line-height: 40px;
+        /*margin: 5px 0px 20px 0;*/
+        padding: 0px;
+        font-size: 20px;
+    }
+
+    ul li{
+        display: none;
+    }
+
+    .navbar-menu{
+        display: block;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .navbar-list{
+        right: 0;
+        top: 35px;
+        background-color: #46ac0bd2;
+    }
+
+    #menu:checked ~ ul li{
+        display: block;
+    }
+}

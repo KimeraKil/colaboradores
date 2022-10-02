@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #28ac0b;
+}
+
+.navTabs{
+    width: 1050px;
+    height: 500px;
+    margin: 5px auto;
+    background-color: #fff;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.navTabs ul{
+    list-style: none;
+}
+
+.navTabs ul li{
+    float: left;
+}
+
+.navTabs label{
+    width: 100px;
+    padding: 25px;
+    background-color: #363b48;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.rdTabs:checked ~ label{
+    background-color: #e54e43;
+}
+.rdTabs{
+    display: none;
+}
+
+.Content{
+    border-top: 5px solid #e54e43;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    height: 420px;
+    width: 1030px;
+    left: 0;
+}
+
+.rdTabs:checked ~ .Content{
+   display: block;
+}
+
+.Content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    overflow: hidden;
+    align-content: center;
+}
+
+.Content .Salada{
+    width: 25%;
+    display: block;
+    float: left;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.Content .Quente{
+    width: 25%;
+    display: block;
+    float: left;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.Content .Sobremesa{
+    width: 25%;
+    display: block;
+    float: left;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+.Content .Salada h2, .Quente h2, .Sobremesa h2{
+    color: tomato;
+}
+
+.aviso {
+    display: inline-block;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: red;
+    background-color: yellow;
+}
+
+@media(max-width: 412px){
+    
+    .navTabs{
+        width: 380px;
+        height: 680px;
+    }
+
+    .navTabs label{
+        width: 44px;
+        padding: 5px;
+        font-size: 0.6rem;
+    }
+
+    .Content{
+        height: 640px;
+        width: 360px;
+        left: 0;
+    }
+
+    .Content .Salada h2, .Quente h2, .Sobremesa h2{
+        margin-top: 15px;
+        color: tomato;
+    }
+    .Content .Salada{
+        display: contents;
+        /*float: left;
+        margin-left: 40px;
+        margin-top: 20px;*/
+    }
+    
+    .Content .Quente{
+        display: contents;
+        /*float: left;
+        margin-left: 70px;
+        margin-top: 20px;*/
+    }
+    
+    .Content .Sobremesa{
+        display: contents;
+        /*float: left;
+        margin-left: 80px;
+        margin-top: 20px;*/
+    }
+
+    .Content{
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .aviso {
+        font-size: 1.2em;
+    }
+    
+}
+
+@media(max-width: 385px){
+    
+    .navTabs{
+        width: 380px;
+        height: 680px;
+    }
+
+    .navTabs label{
+        width: 44px;
+        padding: 5px;
+        font-size: 0.6rem;
+    }
+
+    .Content{
+        height: 640px;
+        width: 360px;
+        left: 0;
+    }
+
+    .Content .Salada h2, .Quente h2, .Sobremesa h2{
+        margin-top: 15px;
+        color: tomato;
+    }
+    .Content .Salada{
+        display: contents;
+        /*float: left;
+        margin-left: 40px;
+        margin-top: 20px;*/
+    }
+    
+    .Content .Quente{
+        display: contents;
+        /*float: left;
+        margin-left: 70px;
+        margin-top: 20px;*/
+    }
+    
+    .Content .Sobremesa{
+        display: contents;
+        /*float: left;
+        margin-left: 80px;
+        margin-top: 20px;*/
+    }
+
+    .Content{
+        overflow: hidden;
+        position: absolute;
+    }
+
+    .aviso {
+        font-size: 1.2em;
+    }
+    
+}
+
+@media(max-width: 360px){
+    
+    .navTabs{
+        width: 350px;
+        height: 680px;
+    }
+
+    .navTabs label{
+        width: 40px;
+        padding: 5px;
+        font-size: 0.6rem;
+    }
+
+    .Content{
+        height: 640px;
+        width: 330px;
+        left: 0;
+    }
+
+    .Content .Salada h2, .Quente h2, .Sobremesa h2{
+        margin-top: 15px;
+        color: tomato;
+    }
+    .Content .Salada{
+        display: contents;
+        /*float: left;
+        margin-left: 40px;
+        margin-top: 20px;*/
+    }
+    
+    .Content .Quente{
+        display: contents;
+        /*float: left;
+        margin-left: 70px;
+        margin-top: 20px;*/
+    }
+    
+    .Content .Sobremesa{
+        display: contents;
+        /*float: left;
+        margin-left: 80px;
+        margin-top: 20px;*/
+    }
+
+    .Content{
+        overflow: hidden;
+        position: absolute;
+ 
+    }
+    
+    .aviso {
+        font-size: 1.2em;
+    }
+}

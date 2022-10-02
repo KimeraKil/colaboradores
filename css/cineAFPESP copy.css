@@ -1,0 +1,159 @@
+body, h2, p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h2{
+    font-size: 30px;
+}
+
+/* NAVBAR */
+#navbar{
+    background-color: #28ac0b;
+    color: rgb(255, 255, 255);
+    padding: 0 15px;
+    height: 60px;
+}
+
+#navbar h2, #navbar ul, #navbar-list li, #navbar nav{
+    display: inline-block;
+}
+
+#navbar h2{
+    margin: 0;
+    line-height: 60px;
+    margin-left: 55px;
+}
+
+#navbar img{
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+}
+
+#navbar nav{
+    float: right;
+}
+
+#navbar ul{
+    margin-top: 22px;
+}    
+
+#navbar li{
+    margin: 0 10px;
+}
+
+#navbar-list li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#navbar-list li a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+#main-banner {
+    height: 70vh;
+    background-image: url('../img/CineAFPESPSect.jpg');
+    background-size: cover;
+    padding-top: 15vh;
+}
+
+#section-sobre {
+    font-size: larger;
+    text-align: center;
+    background-color: #28ac0b;
+    color: rgb(255, 255, 255);
+    padding-top: 25px;
+    height: 150px;
+}
+
+#section-sobre a {
+    color: red;
+    padding: 1%;
+    background-color:yellow;
+    border-radius: 10%;
+}
+
+#section-sobre h2{
+    margin-bottom: 20px;
+}
+
+#section-sobre p{
+    max-width: 90%;
+    font-size: large;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 30px;
+}
+footer .detail{
+    font-weight: bold;
+}
+
+footer p{
+    margin-top: 10px;
+}
+
+footer{
+    padding: 20px 0;
+    background-color: #28ac0b;
+    color: #fff;
+    text-align: center;
+}
+
+/* Responsivo */
+
+@media(max-width: 450px)
+{
+    /* Geral */
+    #navbar-list li a{
+        font-size: 1rem;
+    }
+
+    /*navbar*/
+    #navbar h2 {
+        display: none;
+    }
+
+    #navbar img {
+        top: 7px;
+    }
+
+    #navbar ul{
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+
+    #main-banner {
+        height: 20vh;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+        /*font-size: 12px;*/
+        /*text-align: center;*/
+        /*width: 130px;
+        /*margin-right: auto;
+        margin-left: auto;
+        padding: 2px;*/
+    }
+ 
+    #section-sobre h2 {
+        font-size: 1.2rem;
+        padding-top: 2px;
+    }
+
+    #section-sobre p{
+        font-size: 1rem;
+    }
+
+    #section-sobre a{
+        font-size: 0.8rem;
+    }
+
+    #section-sobre {
+        padding: 2px;
+        height: 150px;
+    }
+
+    
+}

@@ -1,0 +1,58 @@
+/*   DEFINIÇÃO GERAL  */
+/*Definindo Fonte e Marge Body e H2*/
+body, h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+/*Definindo Tamanho do H2*/
+h2{
+    font-size: 30px;
+}
+/*Definindo Cor de Fundo, Cor da Fonte, Area Clicavel,
+e Tamanho Navbar*/
+#navbar{
+    background-color: #28ac0b;
+    color: rgb(255, 255, 255);
+    padding: 0 15px;
+    height: 60px;
+}
+/*Definindo comportamento/orientação dos itens*/
+#navbar h2, #navbar nav, #navbar ul, #navbar-list li{
+    display: inline-block;
+}
+/*Definindo posição do Item*/
+#navbar nav{
+    float: right;
+}
+/*Definindo Altura/tamanho da Imagem, trasformação em
+corte redondo em volta da imagem, posição, altura*/
+#navbar img{
+    height: 45px;
+    border-radius: 50%;
+    position: absolute ;
+    top: 10px;
+}
+/*Definindo Margem, altura da linha, e distancia da 
+margem esquerda*/
+#navbar h2{
+    margin: 0;
+    line-height: 60px;
+    margin-left: 55px;
+}
+/*Definindo margem da lista */
+#navbar ul{
+    margin-top: 22px;
+}
+/*Definindo margem da lista*/
+#navbar li{
+    margin: 0 10px;
+}
+/*Removendo underline dos links, mudando cor dos links*/
+#navbar-list li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#navbar-list li a:hover{
+    border-bottom: 1px solid #fff;
+}
