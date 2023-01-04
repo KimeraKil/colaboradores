@@ -3,7 +3,6 @@ body{
     margin: 0;
     padding: 0;
     position: relative;
-    display: flex;
 }
 
 .principal{
@@ -14,14 +13,30 @@ body{
     text-align: center;
     line-height: 1px;
 }
+.pform{
+    position: relative;
+    top: -210px;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    line-height: 1px;
+}
 
 .principal h4{
-    font-size: 15px;
+    font-size: 20px;
     text-align: right;
     position: relative;
     margin-right: 50px;
     color: orangered;
     font-style: bold;
+}
+
+.principal input{
+    display: flex;
+    width: 250px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
 }
 
 .supImg{
@@ -44,7 +59,7 @@ body{
     width: 99%;
     height: 50px;
     left: 0.5%;
-    bottom: 0;
+    bottom: 5px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -60,7 +75,7 @@ body{
 h2, h3{
     color: orangered;
     font-style: bold;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 #bPetite{
