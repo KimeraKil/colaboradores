@@ -1,0 +1,57 @@
+<?php
+    include('conexao.php');
+?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/fullForms.css">
+    <title>Cardapio</title>
+</head>
+    <body>    
+        <form class="pform" action="cardapioPHP.php" method="POST">  
+            <div class="principal">
+                <input type="text" value="Almoço/Jantar" id="p25" name="p25">
+                <div class="saladas">
+                    <h2>Saladas</h2>
+                    <input type="text" id="p1" value="Mix de Folhas" name="p1">
+                    <input type="text" id="p2" value="Salada de Frutos" name="p2">
+                    <input type="text" id="p3" value="Salada de Grãos" name="p3">
+                    <input type="text" id="p4" value="Salada de Raiz" name="p4">
+                    <input type="text" id="p5" value="Molho 1" name="p5">
+                    <input type="text" id="p6" value="Molho 2" name="p6">
+                    <br>
+                </div>
+                <div class="PratosQuentes">
+                    <h2>Pratos Quentes</h2>
+                    <input type="text" id="p7" value="Sopa" name="p7">
+                    <input type="text" id="p8" value="Creme" name="p8">
+                    <input type="text" id="p9" value="Arroz" name="p9">
+                    <input type="text" id="p10" value="Arroz Integral" name="p10">
+                    <input type="text" id="p11" value="Feijão" name="p11">
+                    <input type="text" id="p12" value="Guarnição 1" name="p12">
+                    <input type="text" id="p13" value="Guarnição 2" name="p13">
+                    <input type="text" id="p14" value="Guarnição 3" name="p14">
+                    <input type="text" id="p15" value="Guarnição 4" name="p15">
+                    <input type="text" id="p16" value="Macarrão" name="p16">
+                    <input type="text" id="p17" value="Molho Vermelho" name="p17">
+                    <input type="text" id="p18" value="Molho Branco" name="p18">
+                    <input type="text" id="p19" value="Proteina 1" name="p19">
+                    <input type="text" id="p20" value="Proteina 2" name="p20">
+                    <br>
+                </div>
+                <div class="sobremesa">
+                    <h2>Sobremesa</h2>
+                    <input type="text" id="p21" value="Sobremesa Principal" name="p21">
+                    <input type="text" id="p22" value="Doce Caseiro" name="p22">
+                    <input type="text" id="p23" value="Gelatina" name="p23"> 
+                    <input type="text" id="p24" value="Fruta" name="p24">
+                    <br>
+                    <input type="submit" value="Salvar" name="submit">
+                </div>  
+            </div>    
+        </form>
+    </body>
+</html>
