@@ -1,7 +1,5 @@
 <?php
 
-    include('conexao.php');
-
     $p0 = $_POST['p25'];
     $p1 = $_POST['p1'];
     $p2 = $_POST['p2'];
@@ -30,8 +28,8 @@
 
     $hoje = date('y/m/d');
 
-    $comando = "INSERT INTO `cardapio`(`data`, `p1`, `p2`, p3, `p4`, `p5`, `p6`, `p7`, `p8`, `p9`, `p10`, `p11`, p12, p13, p14, `p15`, `p16`, `p17`, `p18`, `p19`, `p20`, `p21`, `p22`, `p23`, `p24`) VALUES ('$hoje', '$p1', '$p2', '$p3', '$p4', '$p5', '$p6', '$p7', '$p8', '$p9', '$p10', '$p11', '$p12', '$p13', '$p14', '$p15', '$p16', '$p17', '$p18', '$p19', '$p20', '$p21', '$p22', '$p23', '$p24')";
-    mysqli_query($conn, $comando);
+    //$comando = "INSERT INTO `cardapio`(`data`, `p1`, `p2`, p3, `p4`, `p5`, `p6`, `p7`, `p8`, `p9`, `p10`, `p11`, p12, p13, p14, `p15`, `p16`, `p17`, `p18`, `p19`, `p20`, `p21`, `p22`, `p23`, `p24`) VALUES ('$hoje', '$p1', '$p2', '$p3', '$p4', '$p5', '$p6', '$p7', '$p8', '$p9', '$p10', '$p11', '$p12', '$p13', '$p14', '$p15', '$p16', '$p17', '$p18', '$p19', '$p20', '$p21', '$p22', '$p23', '$p24')";
+    //mysqli_query($conn, $comando);
     //mysqli_close($conn);
    /*if(mysqli_query($conn, $comando)){
         echo "Cadastrado com Sucesso";
