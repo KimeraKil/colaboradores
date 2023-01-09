@@ -12,6 +12,17 @@ body{
     display: block;
 }
 
+.navbar-list span{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-size: 12px;
+    display: block;
+    line-height: 12px;
+    text-align: center;
+}
+
 .logoColaboradores{
     position: absolute;
     width: 45px;
